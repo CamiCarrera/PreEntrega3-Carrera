@@ -36,8 +36,10 @@ body{
 
 .img-inicio{
     width: 60%;
+    height: auto;
     position: relative;
-    padding-left: 50px;}
+    padding-left: 50px;
+    }
 
 .img-inicio img{
     width: 100%;
@@ -45,10 +47,8 @@ body{
     object-fit:contain;
     position: relative;}
 
-
-
 .span1{
-    display: block;
+    display: flex;
     max-width: 195px;
     height: 100px;
     background-color:#cbc0d3d3 ;
@@ -64,7 +64,7 @@ body{
     font-style:italic;}
 
 .span2{
-    display: block;
+    display: flex;
     max-width: 195px;
     height: 100px;
     background-color:#cbc0d3d3 ;
@@ -81,7 +81,7 @@ body{
     right: 0px; }
 
 .span3{
-    display: block;
+    display: flex;
     max-width: 195px;
     max-height: 100px;
     background-color:#cbc0d3d3 ;
@@ -119,6 +119,32 @@ body{
         text-decoration:underline;}
 
 
+        @media (max-width:820px){
+            .inicio .inicio-contenido{
+                width: 100%;
+                display: flex;
+                flex-direction: column;}
+        }
+
+        @media (max-width:820px){
+            .img-inicio img{
+                width: 100%;
+                display: flex;
+                flex-direction: column;}
+        }
+            
+        @media (max-width:1115px){    
+            .span1 {
+                display: none;
+            }
+            .span2 {
+                display: none;
+            }
+            .span3 {
+                display: none;
+            }
+        }
+          
 
 /*Sobre Nosotros*/
 
