@@ -500,6 +500,10 @@ body{
     .acordeon-inicio{
         padding: 20px;
     }
+
+    .acordeon{
+        width: 100%;
+    }
 }
 
 /*Contacto*/
