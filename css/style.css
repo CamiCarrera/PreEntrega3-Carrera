@@ -386,14 +386,15 @@ body{
     text-align: center;
     text-decoration-color:#b2dbe7;
 }
+
 .contenido-precios p{
-    font-weight: bold;
-    text-align: center;
+    font-weight: bold;    
 }
 
 
 .contenido-precios ul{
     padding-left: 50px;
+    
 }
 
 .contenido-precios a{
