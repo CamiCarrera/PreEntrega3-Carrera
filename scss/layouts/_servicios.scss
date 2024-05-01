@@ -46,9 +46,7 @@
     }
 
     img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
+        @include img(100%, 400px, cover);
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
 

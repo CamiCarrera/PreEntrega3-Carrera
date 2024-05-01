@@ -1,9 +1,33 @@
-$color-1:#CBC0D3;
-$color-2:#ebc3c98c;
-$color-3:#b2dbe770;
-$color-span:#cbc0d3d3;
+$color-1: #CBC0D3;
+$color-2: #ebc3c98c;
+$color-3: #b2dbe770;
+$color-span: #cbc0d3d3;
 
 /*Precios*/
 
-$color-titulo-boton:#eeaab4;
-$color-borde-caja:#b2dbe7;
+$color-titulo-boton: #eeaab4;
+$color-borde-caja: #b2dbe7;
+
+
+
+@mixin flex($direction, $aling, $justify, $gap ) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $aling;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+@mixin img($width, $heigth, $object) {
+    width: $width;
+    height: $heigth;
+    object-fit: $object;
+}
+
+@mixin text($family,$size,$weight,$aling,$style) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $aling;
+    font-style: $style;
+}

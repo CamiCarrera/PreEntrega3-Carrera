@@ -37,8 +37,10 @@ nav {
 /*index*/
 .inicio {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-betwenn;
+  gap: 0px;
   width: 100%;
   min-height: 100vh;
 }
@@ -90,9 +92,9 @@ nav {
   top: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 10px;
+  padding-top: 25px;
   font-family: Vazirmant;
   font-size: 14px;
-  padding-top: 25px;
   font-weight: 600;
   text-align: center;
   font-style: italic;
@@ -111,13 +113,13 @@ nav {
   top: 200px;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 10px;
+  padding: 20px;
+  right: 0px;
   font-family: Vazirmant;
   font-size: 14px;
-  padding: 20px;
   font-weight: 600;
   text-align: center;
   font-style: italic;
-  right: 0px;
 }
 @media (max-width: 1115px) {
   .inicio .span2 {
@@ -133,9 +135,9 @@ nav {
   top: 350px;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 10px;
+  padding: 25px;
   font-family: Vazirmant;
   font-size: 14px;
-  padding: 25px;
   font-weight: 600;
   text-align: center;
   font-style: italic;
@@ -186,6 +188,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0px;
   padding: 20px;
   text-align: center;
 }
@@ -348,9 +351,10 @@ nav {
 .box-precios div {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 0px;
+  font-size: 1rem;
   padding-bottom: 15px;
 }
 .box-precios h2 {
@@ -379,6 +383,7 @@ nav {
 }
 .box-precios img {
   width: 30%;
+  height: auto;
   object-fit: cover;
   padding: 20px;
   border-radius: 50px;
@@ -393,8 +398,10 @@ nav {
 /*Faqs y Contacto*/
 .acordeon-faqs {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 0px;
   padding: 20px;
   padding-bottom: 50px;
 }
@@ -465,9 +472,11 @@ nav {
 }
 @media (max-width: 950px) {
   .contacto-total {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0px;
     margin: auto;
   }
 }
@@ -481,10 +490,10 @@ nav {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
   gap: 20px;
+  padding: 20px;
   text-align: center;
 }
 @media (max-width: 950px) {
@@ -519,8 +528,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #efd3d7;
+  justify-content: center;
   gap: 8px;
+  background-color: #efd3d7;
   justify-content: center;
   border: #000 solid 1px;
   padding: 15px;
@@ -546,8 +556,10 @@ nav {
 }
 .boton button {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 0px;
   width: 100%;
   height: 40px;
   background-color: #CBC0D3;

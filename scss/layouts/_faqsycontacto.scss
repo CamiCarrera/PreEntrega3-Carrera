@@ -1,9 +1,7 @@
 /*Faqs y Contacto*/
 
 .acordeon-faqs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(row, center, space-between, 0px);
     padding: 20px;
     padding-bottom: 50px;
 
@@ -57,9 +55,7 @@
 }
 
 .acordeon-inicio img {
-    width: 40%;
-    height: 40%;
-    object-fit: cover;
+    @include img(40%,40%,cover);
 
     @media(max-width:750px) {
         width: 0;
@@ -77,9 +73,7 @@
     flex-wrap: wrap;
 
     @media (max-width: 950px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex(column, center, center, 0px);
         margin: auto;
     }
 
@@ -93,12 +87,8 @@
 
 .contacto-titulo {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center, 20px);
     padding: 20px;
-    gap: 20px;
     text-align: center;
 
     @media (max-width: 950px) {
@@ -131,11 +121,8 @@
 
 
     .titulo-formulario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, center, center, 8px);
         background-color: #efd3d7;
-        gap: 8px;
         justify-content: center;
         border: #000 solid 1px;
         padding: 15px;
@@ -163,12 +150,9 @@
     gap: 20px;
 
     button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center, 0px);
         width: 100%;
         height: 40px;
         background-color: $color-1;
-
     }
 }

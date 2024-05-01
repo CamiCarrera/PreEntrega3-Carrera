@@ -32,11 +32,8 @@
     }
 
     div {
-        display: flex;
-        flex-direction: column;
+        @include flex(column, center, center, 0px);
         font-size: 1rem;
-        justify-content: center;
-        align-items: center;
         padding-bottom: 15px;
     }
 
@@ -69,8 +66,7 @@
     }
 
     img {
-        width: 30%;
-        object-fit: cover;
+        @include img(30%, auto, cover);
         padding: 20px;
         border-radius: 50px;
 
@@ -78,6 +74,5 @@
             width: auto;
             height: auto;
         }
-
     }
 }
