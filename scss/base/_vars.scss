@@ -24,7 +24,7 @@ $color-borde-caja: #b2dbe7;
     object-fit: $object;
 }
 
-@mixin text($family,$size,$weight,$aling,$style) {
+@mixin text($family, $size, $weight, $aling, $style) {
     font-family: $family;
     font-size: $size;
     font-weight: $weight;
