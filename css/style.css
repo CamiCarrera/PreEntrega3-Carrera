@@ -44,6 +44,30 @@ nav {
   gap: 0px;
   width: 100%;
   min-height: 100vh;
+  display: flex;
+}
+.inicio article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid #000;
+  padding-right: 30px;
+}
+.inicio article h1 {
+  text-decoration: underline;
+}
+.inicio article a {
+  background-color: #CBC0D3;
+  text-decoration: none;
+  color: #000;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 10px;
+  width: 200px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .inicio div {
   width: 60%;
@@ -56,28 +80,6 @@ nav {
   height: 500px;
   object-fit: contain;
   position: relative;
-}
-.inicio article {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  text-align: center;
-  border-right: 1px solid #000;
-  padding-right: 30px;
-}
-.inicio a {
-  background-color: #CBC0D3;
-  text-decoration: none;
-  color: #000;
-  padding: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.1019607843);
-  border-radius: 10px;
-  width: 200px;
-  font-weight: 600;
-}
-.inicio h1 {
-  text-decoration: underline;
 }
 .inicio :hover a {
   transform: translateY(-30px);
@@ -170,6 +172,36 @@ nav {
   }
 }
 
+/*.banda{
+    width: 250%;
+    height: 80px;
+    overflow: hidden;
+    background-color: $color-2;
+    padding: 5px;
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        animation: banda-inicio 15s linear infinite;
+
+        li{
+            color: #000;
+            font-size: 2.5rem;            
+        }
+    }
+}
+
+@keyframes banda-inicio{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}*/
 /*Sobre Nosotros*/
 .box {
   display: grid;
@@ -342,6 +374,9 @@ nav {
   display: flex;
   border-radius: 20px;
   border: 3px solid #b2dbe7;
+  animation: aparecer 2s both;
+  animation-timeline: view();
+  animation-range: cover 5% cover 50%;
 }
 @media (max-width: 800px) {
   .box-precios article {
@@ -395,6 +430,14 @@ nav {
     height: auto;
   }
 }
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /*Faqs y Contacto*/
 .acordeon-faqs {
@@ -412,6 +455,11 @@ nav {
 }
 .acordeon-faqs article {
   width: 70%;
+}
+@media (max-width: 750px) {
+  .acordeon-faqs article {
+    width: 100%;
+  }
 }
 @media (max-width: 750px) {
   .acordeon-faqs {
@@ -540,13 +588,15 @@ nav {
   background-color: #f1e7e9;
   border-color: transparent;
   width: 80%;
-  padding: 15px;
+  padding: 10px;
+  border-radius: 10px;
 }
 .contacto textarea {
   background-color: #f1e7e9;
   width: 80%;
   max-height: 150px;
-  padding-left: 50px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .boton {
@@ -564,6 +614,7 @@ nav {
   width: 100%;
   height: 40px;
   background-color: #CBC0D3;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
